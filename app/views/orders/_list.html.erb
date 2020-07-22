@@ -1,0 +1,9 @@
+<h1>Order: <%= @order.id %></h1>
+<h1>Email: <%= @order.email %></h1>
+  <% @order.line_items.each do |line_item| %>
+    <img style="width: auto; height: 100px;" src="<%= line_item.product.image %>">
+    <h4>Product Name: <%=line_item.product.name %></h4>
+    <p>Description: <%=line_item.product.description %></p>
+    <p>Quantity: <%= line_item.quantity %></p>
+    <p><%= humanized_money_with_symbol line_item.product.price %></p>
+  <% end %>
