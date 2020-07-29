@@ -20,6 +20,6 @@ RSpec.feature "User navigates to product details page by clicking on product on 
     first('.product').click_link('Details')
     # DEBUG /
     expect(page).to have_css('.products-show')
-    save_screenshot
+    # save_screenshot
   end
 end 
