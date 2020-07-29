@@ -1,6 +1,9 @@
 <tr>
   <td>
     <%= image_tag product.image.tiny %>
+    <% if product.quantity == 0 %>
+    <h4>SOLD OUT!</h4>
+    <% end %>
   </td>
   <td>
     <h4><%= product.name %></h4>
