@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of learning Rails.
 
 
 ## Setup
@@ -12,7 +12,8 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 5. Create .env file based on .env.example
 6. Sign up for a Stripe account
 7. Put Stripe (test) keys into appropriate .env vars
-8. Run `bin/rails s -b 0.0.0.0` to start the server when using Vagrant; If on host machine, Run `bin/rails s` to start the server.
+8. Run `bin/rails s -b 0.0.0.0` to start the server when using Vagrant; If on host machine, run `bin/rails s` to start the server
+9. Run `bin/rspec` to run all tests within the `spec` folder
 
 ## Stripe Testing
 
